@@ -7,13 +7,13 @@ body {
 }
 
 header, footer {
-  background-color: #ffa500;
-  text-align: left;
+  background-color: #196db3;
+  text-align: center;
   /* min-width: 500px; */
 }
 
 header {
-  font-family: Work Sans;
+  font-family: 'Nunito', sans-serif;
   color: #fff;
   min-height: 100vh;
   display: flex;
@@ -31,7 +31,7 @@ main {
 }
 
 h1 {
-  font-family: Poppins;
+  font-family: 'PT Sans', sans-serif;
   font-size: calc(1em + 3vw);
   padding-bottom: .67em;
   border-bottom: 1px solid;
@@ -39,18 +39,19 @@ h1 {
 }
 
 h2 {
-  font-family: Poppins;
+  font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.3px;
   text-align: left;
-  color: #ffa500;
+  color: #196db3;
   padding: 10px 0px 10px 10px;
 }
 
 img {
   width: 100%;
-  height: auto;
+  height: 80vh;
+  object-fit: cover;
 }
 
 .wrapper {
@@ -63,7 +64,7 @@ img {
 .bio {
   color: #ffffff;
   font-size: 24px;
-  font-family: 'Work Sans';
+  font-family: 'Nunito', sans-serif;
 }
 
 
@@ -86,7 +87,7 @@ img {
 }
 
 .myButton:hover {
-    background-color:#e69708;
+    background-color:#196db3;
 }
 
 .myButton:active {
@@ -101,14 +102,6 @@ img {
   width: 100%;
 }
 
-.a {
-
-}
-
-.c {
-
-}
-
 .time {
   padding-left: 10px;
   padding-top: 10px;
@@ -118,7 +111,7 @@ img {
 
 .mins {
   display: inline-block;
-  font-family: Poppins;
+  font-family: 'PT Sans', sans-serif;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.3px;
@@ -129,7 +122,7 @@ img {
 }
 
 .description {
-  font-family: Work Sans;
+  font-family: 'Nunito', sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.29;
@@ -139,7 +132,9 @@ img {
   padding: 10px 0px 10px 10px;
   border-top: 1px solid #4a4a4a;
 }
-
+a {
+  color: #196db3;
+}
 .logo {
   width: 115px;
   height: 21.1px;
@@ -148,12 +143,17 @@ img {
 }
 
 .container {
-  /*min-width: 500px; */
   margin: auto;
 }
 
 footer {
   margin-top: 44px;
+}
+
+@media all and (max-width:700px) {
+  main {
+    grid-template-columns: 1fr;
+  }
 }
 
 
