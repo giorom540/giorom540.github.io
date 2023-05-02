@@ -17,9 +17,12 @@ header, footer {
 
 header {
   font-family: 'Nunito', sans-serif;
-  color: #fff;
+  color: #ffffff;
   min-height: 100vh;
   display: flex;
+  background-image: url('../images/milky.jpg');
+  background-size: cover;
+  background-position: center center;
 }
 
 main {
@@ -51,6 +54,8 @@ h2 {
   /* color: #196db3; */
   padding: 10px 0px 10px 10px;
 }
+
+
 
 img {
   width: 100%;
@@ -102,29 +107,14 @@ img {
 
 
 
-.recipe {
+.project {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
   width: 100%;
+  background-color: rgb(167, 185, 216);
 }
 
-.time {
-  padding-left: 10px;
-  padding-top: 10px;
-  width: 20px;
-  height: auto;
-}
 
-.mins {
-  display: inline-block;
-  font-family: 'PT Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-  text-align: left;
-  color: #4a4a4a;
-  position: relative;
-  bottom: 5px;
-}
+
 
 .description {
   font-family: 'Nunito', sans-serif;
@@ -133,7 +123,7 @@ img {
   line-height: 1.29;
   letter-spacing: 0.1px;
   text-align: left;
-  color: #4a4a4a;
+  color: #ffffff;
   padding: 10px 0px 10px 10px;
   border-top: 1px solid #4a4a4a;
 }
@@ -149,6 +139,9 @@ a {
 
 .container {
   margin: auto;
+  background: #4b6cb7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 footer div{
@@ -166,6 +159,43 @@ footer div{
     grid-template-columns: 1fr;
     margin: 44px auto;
   }
+  .description {
+    font-size: 18px;
+  }
+
+  .img {
+    height: 25vh;
+  }
+}
+
+footer div {
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.copyright {
+  margin: auto 0;
+}
+
+.icons a {
+  margin: 0 10px;
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.icons {
+  list-style-type: none;
+  display: inline-flex;
+}
+
+
+.icons a:hover {
+  color: rgb(255, 255, 255, 0.8);
 }
 
 
